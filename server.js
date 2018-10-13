@@ -50,7 +50,8 @@ app.get('/home', (req, res)=>{
     });
 });
 
+const PORT = process.env.PORT || 3000;
  
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
     return console.log('Server is running on port 3000');
 });
