@@ -50,6 +50,14 @@ app.get('/home', (req, res)=>{
     });
 });
 
+
+app.get('/projects', (req, res)=>{
+    res.render('projects.hbs',{
+        pageTitle: 'Projects',
+        headerTitle: 'Matias Navarro - Node / Projects'
+    });
+});
+
 const PORT = process.env.PORT || 3000;
  
 app.listen(PORT, ()=>{
